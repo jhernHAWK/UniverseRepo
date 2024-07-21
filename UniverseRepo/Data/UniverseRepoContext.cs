@@ -15,5 +15,6 @@ namespace UniverseRepo.Data
         }
 
         public DbSet<UniverseRepo.Models.Universe> Universe { get; set; } = default!;
+        public DbSet<UniverseRepo.Models.Character> Character { get; set; } = default!;
     }
 }

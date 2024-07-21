@@ -1,10 +1,10 @@
-﻿@model IEnumerable<UniverseRepo.Models.Universe>
+﻿@model IEnumerable<UniverseRepo.Models.Character>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>List of Universes</h1>
+<h1>List of Characters</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,10 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.universe_Name)
+                @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.created_by)
+                @Html.DisplayNameFor(model => model.universe_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.character_name)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.description)
@@ -28,10 +31,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.universe_Name)
+                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.created_by)
+                @Html.DisplayFor(modelItem => item.universe_id)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.character_name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.description)
