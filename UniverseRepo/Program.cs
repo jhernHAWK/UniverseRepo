@@ -1,7 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using UniverseRepo.Data;
+using Azure.Identity;
 var builder = WebApplication.CreateBuilder(args);
+
+var keyVaultEndpoint = new Uri(Environment.GetEnvironmentVariable("VaultUri"));
+builder.Configuration.AddAzureKeyVault(keyVaultEndpoint, new VisualStudioCredential());
 builder.Services.AddDbContext<UniverseRepoContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("UniverseRepoContext") ?? throw new InvalidOperationException("Connection string 'UniverseRepoContext' not found.")));
 

@@ -5,23 +5,58 @@
 .carousel-item.active {
     height: 100vh;
 }
-
+    /* Aliens  */
     .carousel-item:nth-child(1) {
-        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+        background-image: url('https://th.bing.com/th/id/R.6e9ad4d70c2433f68559e9f5d8e8104d?rik=tPCpa8WNa1xrYA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f03%2f09%2f124407-Alien_movie.jpg&ehk=yYuTkDw7UJSwIehrzGTDUIFdqkqjuVmgYr4fEtBfnTk%3d&risl=&pid=ImgRaw&r=0');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
     }
-
+    /* Avatar  */
     .carousel-item:nth-child(2) {
-        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+        background-image: url('https://lumiere-a.akamaihd.net/v1/images/a_avatarpandorapedia_coveoftheancestors_16x9_1098_02_8b36918a.jpeg?region=0%2C0%2C1920%2C1080');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
     }
-
+    /* Harry Potter  */
     .carousel-item:nth-child(3) {
-        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+        background-image: url('https://images.hdqwalls.com/download/hogwarts-legacy-5q-1920x1080.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    /* Jurassic Park  */
+    .carousel-item:nth-child(4) {
+        background-image: url('https://wallpapercave.com/wp/wp6758884.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    /* Lord of the Rings  */
+    .carousel-item:nth-child(5) {
+        background-image: url('https://wallpaperaccess.com/full/758025.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    /* Marvel  */
+    .carousel-item:nth-child(6) {
+        background-image: url('https://images.hdqwalls.com/download/marvel-cinematic-universe-jm-2560x1440.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    /* Red Rising */
+    .carousel-item:nth-child(7) {
+        background-image: url('https://wallpaperaccess.com/full/7123608.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    /* Star Wars  */
+    .carousel-item:nth-child(8) {
+        background-image: url('https://wallpaperaccess.com/full/2700193.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -42,5 +77,5 @@
 }
 
 .navbar .nav-link {
-    color: #fff !important;
+    color: #fff;
 }
