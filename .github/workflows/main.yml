@@ -1,0 +1,28 @@
+name: My .NET Action
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    
+    defaults:
+      run:
+        shell: cmd
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+    - name: Stop example.com
+      run: appcmd stop sites "example.com"
+    - name: Publish Release
+      run: dotnet publish example.com --configuration Release -o C:\Users\adminj\Documents\Site
+    - name: Start example.com
+      run: appcmd start sites "example.com"
